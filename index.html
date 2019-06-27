@@ -46,6 +46,10 @@
     <h2>Download Files</h2>
     <a style="display: block" href="https://isachinraj.github.io/Analytics/Rail-and-Fly.pdf" download>Download a PDF file</a>
     <a style="display: block" href="https://isachinraj.github.io/Analytics/Training.docx" download>Download a Word Document</a>
+
+    <h2>Track Javascript errors in a Page</h2>
+    <input type="text" class="input">
+    <button class="btn btn-warning" onclick="submitForm()">Submit Form</button>
     
   </div>
 
@@ -62,22 +66,13 @@
     crossorigin="anonymous"></script>
   
     <script>
-
-      $(document).ready(function() {
-
-        
-
-        // var $videoSrc;
-
-        // $(document).on('click', '.video-btn', function() {
-        //   console.log(this);
-        //     $videoSrc = $(this).data( "src" );
-        //     console.log($videoSrc);
-        // });
-          
-        
-      });
-      </script>
+      function submitForm(){
+        "use strict";
+        alert("Error was caught in js");
+        i = i + t;
+      }
+      
+    </script>
 
 </body>
 
