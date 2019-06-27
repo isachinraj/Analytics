@@ -13,9 +13,25 @@
   <title>Demo</title>
   <style>
   </style>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P63FBN8');</script>
+  <!-- End Google Tag Manager -->
+
 </head>
 
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P63FBN8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
   <div class="container-fluid">
     <h1>I am here</h1>
   </div>
@@ -36,41 +52,15 @@
 
       $(document).ready(function() {
 
-        // ------------POPOVER--------------------
-        // $("[data-toggle=popover]").each(function(i, obj) {
-        //   $(this).popover({
-        //     html: true,
-        //     trigger:"click",
-        //     content: function() {
-        //       var id = $(this).attr('id');
-              
-        //       return $('#popover-content-' + id).html();
-        //     }
-        //   });
+        
+
+        // var $videoSrc;
+
+        // $(document).on('click', '.video-btn', function() {
+        //   console.log(this);
+        //     $videoSrc = $(this).data( "src" );
+        //     console.log($videoSrc);
         // });
-
-        // $('body').on('click', function (e) {
-        //     $('[data-toggle="popover"]').each(function () {
-        //         //the 'is' for buttons that trigger popups
-        //         //the 'has' for icons within a button that triggers a popup
-        //         if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-        //             $(this).popover('hide');
-        //         }
-        //     });
-        // });
-        // ------------POPOVER END--------------------
-
-        // ------------VIDEO--------------------------
-
-        // Gets the video src from the data-src on each button
-
-        var $videoSrc;
-
-        $(document).on('click', '.video-btn', function() {
-          console.log(this);
-            $videoSrc = $(this).data( "src" );
-            console.log($videoSrc);
-        });
           
         
       });
