@@ -11,7 +11,19 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <title>Demo</title>
-
+  <style>
+  h2{
+    padding: 10px;
+  }
+  a{
+    padding: 5px;
+  }
+  .page-row{
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  </style>
   <script>
     dataLayer = [{
       PageName : 'Home',
@@ -38,46 +50,61 @@
 
 
   <div class="container-fluid">
-    <h1 class="text-center">Analytics Training</h1>
+    <h2 class="text-center">Analytic Tracker</h2>
 
-    <h2>External Link Click</h2>
-    <a style="display: block" href="https://isachinraj.github.io/Analytics/" target="_blank">Internal PAge link</a>
-    <a style="display: block" href="http://www.google.com" target="_blank">External link for Google</a>
-    <a style="display: block" href="http://www.facebook.com" target="_blank">External link for facebook</a>
+    <div class="page-row">
+      <h4>External Link Click</h4>
+      <a style="display: block" href="https://isachinraj.github.io/Analytics/" target="_blank">Internal Page link</a>
+      <a style="display: block" href="http://www.google.com" target="_blank">External link for Google</a>
+      <a style="display: block" href="http://www.facebook.com" target="_blank">External link for facebook</a>
+    </div>
 
-    <h2>Button click</h2>
-    <button class="btn btn-primary">Click</button>
+    <div class="page-row">
+      <h4>Button click</h4>
+      <button class="btn btn-primary">Click</button>
+    </div>
+
+    <div class="page-row">
+      <h4>Download Files</h4>
+      <a style="display: block" href="https://isachinraj.github.io/Analytics/Rail-and-Fly.pdf" download>Download a PDF file</a>
+      <a style="display: block" href="https://isachinraj.github.io/Analytics/Training.docx" download>Download a Word Document</a>
+    </div>
+
+    <div class="page-row">
+      <h4>Track Javascript errors in a Page</h4>
+      <input type="text" class="input">
+      <button class="btn btn-warning" onclick="submitForm()">Submit Form</button>
+    </div>
     
-    <h2>Download Files</h2>
-    <a style="display: block" href="https://isachinraj.github.io/Analytics/Rail-and-Fly.pdf" download>Download a PDF file</a>
-    <a style="display: block" href="https://isachinraj.github.io/Analytics/Training.docx" download>Download a Word Document</a>
-
-    <h2>Track Javascript errors in a Page</h2>
-    <input type="text" class="input">
-    <button class="btn btn-warning" onclick="submitForm()">Submit Form</button>
-
-    <h2>Updating Data layer Object Dynamically using GTM</h2>
-    <button class="btn btn-danger" onclick="dataLayer.push({'Action': 'Add to Favorites', 'event': 'addToFavorite'})">Add to Favorites</button>
-
-    <h2 id="agenda" style="margin-top:400px;">Agenda</h2>
-    <ul style="margin-bottom: 50px;">
-      <li>Section 1</li>
-      <li>Section 2</li>
-      <li>Section 3</li>
-      <li>Section 4</li>
-      <li>Section 5</li>
-      <li>Section 6</li>
-      <li>Section 7</li>
-      <li>Section 8</li>
-      <li>Section 9</li>
-      <li>Section 10</li>
-      <li>Section 11</li>
-      <li>Section 12</li>
-      <li>Section 13</li>
-    </ul>
+    <div class="page-row">
+      <h4>Updating Data layer Object Dynamically using GTM</h4>
+      <button class="btn btn-danger" onclick="dataLayer.push({'Action': 'Add to Favorites', 'event': 'addToFavorite'})">Add to Favorites</button>
+    </div>
     
-    <h2 id="agenda" style="margin-top:50px;">You tube video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FK3dav4bA4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="page-row">
+      <h4 id="agenda" style="margin-top:400px;">Agenda</h4>
+      <ul style="margin-bottom: 50px;">
+        <li>Section 1</li>
+        <li>Section 2</li>
+        <li>Section 3</li>
+        <li>Section 4</li>
+        <li>Section 5</li>
+        <li>Section 6</li>
+        <li>Section 7</li>
+        <li>Section 8</li>
+        <li>Section 9</li>
+        <li>Section 10</li>
+        <li>Section 11</li>
+        <li>Section 12</li>
+        <li>Section 13</li>
+      </ul>
+    </div>
+
+    <div class="page-row">
+      <h4 id="agenda" style="margin-top:50px;">You tube video</h4>
+      <iframe style="margin-bottom: 50px;" width="560" height="315" src="https://www.youtube.com/embed/FK3dav4bA4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
   </div>
 
   <!-- Optional JavaScript -->
